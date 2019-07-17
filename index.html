@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="menu">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="left_menu">
+              <ul class="nav">
+                <li class="nav-item" id="sports"><button type="button" class="btn btn-link"
+                    id="sports_btn">Sports</button>
+                  <ul class="nav flex-column" id="sports_category">
+                    <li class="nav-item" id="mlb"><button type="button" class="btn btn-link">MLB</button></li>
+                    <li class="nav-item" id="mls"><button type="button" class="btn btn-link">MLS</button></li>
+                    <li class="nav-item" id="nba"><button type="button" class="btn btn-link">NBA</button></li>
+                    <li class="nav-item" id="nfl"><button type="button" class="btn btn-link">NFL</button></li>
+                    <li class="nav-item" id="fighting"><button type="button" class="btn btn-link">Fighting</button></li>
+                    <li class="nav-item" id="golf"><button type="button" class="btn btn-link">Golf</button></li>
+                    <li class="nav-item" id="ncaa_bb"><button type="button" class="btn btn-link">NCAA BB</button></li>
+                    <li class="nav-item" id="ncaa_fb"><button type="button" class="btn btn-link">NCAA FB</button></li>
+                    <li class="nav-item" id="tennis"><button type="button" class="btn btn-link">Tennis</button></li>
+                    <li class="nav-item" id="playoff_tickets"><button type="button" class="btn btn-link">Playoff
+                        Tickets</button></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><button type="button" class="btn btn-link">Music</button></li>
+                <li class="nav-item"><button type="button" class="btn btn-link">More</button></li>
+                <li class="nav-item"><button type="button" class="btn btn-link">Sell</button></li>
+                <li class="nav-item"><button type="button" class="btn btn-link">Support</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="right_menu">
+              <ul class="nav">
+                <li class="nav-item"><button type="button" class="btn btn-link">Track My Order</button></li>
+                <li class="nav-item"><button type="button" class="btn btn-link" id="sign_up">Sign Up</button></li>
+                <li class="nav-item"><button type="button" class="btn btn-link">Log In</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="seach">
+            <p id="life">Life's an event.</p>
+            <p id="life">We have the tickets.</p>
+            <form action="/action.php">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="Search" name="input" id="search">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="border_bottom">
+    <div class="row">
+      <div class="col-md-6">
+        <div href="#" class="icon_location">
+          <div id="popover-content" class="hide">
+            <a href="#" id="location_input" data-toggle="popover" data-placement="bottom"
+              data-popover-content="#unique-id"><i class="fa fa-map-marker-alt"></i>Change location</a>
+          </div>
+          <div id="unique-id" style="display:none;">
+            <div class="popover-body">
+              <form method="post" action="#">
+                <input type="text" class="form-control" id="search" placeholder="Search by City" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div href="#" class="date">
+          <a href="#" id="date_icon" data-toggle="dropdown">Date <i class="fa fa-arrow-down" id="arrow"></i> <i
+              class="fa fa-arrow-up" id="arrow"></i></a>
+          <div class="dropdown-menu">
+            <ul>
+              <li>Any Date</li>
+              <li>Today</li>
+              <li>Tomorrow</li>
+              <li>Weekend</li>
+              <li>Set Date</li>
+            </ul>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container">
+      <div class="band_cards">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card1">
+              <div class="band_image"><img src="assets/images/download (1).jpg">
+                <div class="band_name">
+                  <p>Band Name</p>
+                  <span><i class="fa fa-heart"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="load_more">
+            <button type="button" class="btn btn-primary" id="load_button">Load More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fan_section">
+      <div class="row">
+        <div class="col-md-12">
+          <p id="ticket">A ticket for every fan.</p>
+          <p id="story">There's a story behind every seat.</p>
+          <button class="btn btn-primary">Meet our fans</button>
+        </div>
+      </div>
+      <div class="fan_picture_video">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="fan_img"><img src="assets/images/NCAA_Football.jpg"></div>
+            <div class="fan_img"><img src="assets/images/Country.jpg"></div>
+            <div class="fan_img"><img src="assets/images/MLS.jpg"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="fan_video">
+            <iframe src="https://www.youtube.com/watch?v=waY6FwOd9eM"></iframe>
+            </div>
+            <div class="fan_video_3pictures">
+              <img src="assets/images/MLB.jpg">
+              <img src="assets/images/Comedy.jpg">
+              <img src="assets/images/Pop.jpg">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="fan_img"><img src="assets/images/NCAA_Basketball.jpg"></div>
+            <div class="fan_img"><img src="assets/images/Golf.jpg"></div>
+            <div class="fan_img"><img src="assets/images/NBA.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gurantee_trust_div">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="gurantee_trust">
+              <p id="gurantee">Guarantees you can trust.</p>
+              <p id="trust">Because more peace of mind means more love for the event.</p>
+            </div>
+            <div class="gurantee_trust_row_element">
+              <div class="gurantee_trust_single_row_element">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div class="seatgeek_icon"><i class="fa fa-align-right"></i></div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="seatgeek_icon_p1">
+                      <p id="p1">Get In Guarantee</p>
+                      <p id="p2">Authentic tickets, on-time delivery, and access to your event. Or your money back.
+                        Period.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gurantee_trust_single_row_element">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div class="seatgeek_icon"><i class="fa fa-align-right"></i></div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="seatgeek_icon_p1">
+                      <p id="p1">Get In Guarantee</p>
+                      <p id="p2">Authentic tickets, on-time delivery, and access to your event. Or your money back.
+                        Period.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gurantee_image">
+              <img src="assets/images/trust-image.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background_mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mobile_image">
+              <img src="assets/images/device.jpg">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mobile_side_text">
+              <div class="mobile_side_icon">
+                <i class="fa fa-ad"></i>
+              </div>
+              <div class="mobile_text">
+                <p id="mobile_text_p1">The only ticket app you need.</p>
+                <p id="mobile_text_p2">With best-in-class features with tickets to everything, we have you covered.</p>
+              </div>
+              <div class="two_buttons">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="app_store_button">
+                      <a href="#"><img src="assets/images/cs_appstore.png"></a>
+                    </div>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-2">
+                    <div class="play_store_button">
+                      <a href="#"><img src="assets/images/ao_playstore.png"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_head">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">NFL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NBA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NHL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MLB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rock</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hip-Hop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Country</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Concerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Theater</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NCAAB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NCAAF</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>Learn More</th>
+                  <th>Platform</th>
+                  <th>Community</th>
+                  <th>What's Hot</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">About</a></td>
+                  <td><a href="#">Platform</a></td>
+                  <td><a href="#">Help & Support</a></td>
+                  <td><a href="#">Justin Timberlake</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">SeatGeek Enterprise</a></td>
+                  <td><a href="#">API Docs</a></td>
+                  <td><a href="#">Press</a></td>
+                  <td><a href="#">Pink</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">MLS Partnership</a></td>
+                  <td><a href="#">Dev Blog</a></td>
+                  <td><a href="#">Jobs</a></td>
+                  <td><a href="#">Billy Joel</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Sell on SeatGeek</a></td>
+                  <td><a href="#">Dev Community</a></td>
+                  <td><a href="#">Twitter</a></td>
+                  <td><a href="#">Ariana Grande</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Event News</a></td>
+                  <td><a href="#">Partner Program</a></td>
+                  <td><a href="#">Our Team</a></td>
+                  <td><a href="#">Fleetwood Mac</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <div class="email_send">
+              <p class="email_send_p1">SeatGeek App</p>
+              <p class="email_send_p2">Send a download link to your phone</p>
+              <form action="action.php">
+                <div class="contact_us">
+                  <input id="contact_us_textbox" type="text" class="form-control">
+                  <button id="contact_us_button" type="button" class="btn btn-primary">send</button>
+                </div>
+              </form>
+              <p class="message_data">Messsage and data rates may apply</p>
+              <div class="icon_appstore_playstore">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="icon_appstore">
+                      <span><i class="fa fa-american-sign-language-interpreting"></i> App store</span>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="icon_playstore">
+                      <span><i class="fa fa-american-sign-language-interpreting"></i> App store</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foooter_foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="footer_nav">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#">Privacy polict</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Terms of use</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Site map</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#">Mobile version</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="footer_text">© 2019 SeatGeek. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+  <script src="assets/script/script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+
+</html>
