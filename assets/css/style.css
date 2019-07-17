@@ -20,14 +20,14 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
-
-.menu {
-  padding-top: 10px;
-}
-
 .seach {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+/* full menu decoration css start */
+.menu {
+  padding-top: 10px;
 }
 
 .left_menu {
@@ -69,6 +69,7 @@ body {
   padding: 0 10px;
   margin: 12px 0;
 }
+/* full menu decoration css end */
 
 button {
   margin: 0 !important;
