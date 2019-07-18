@@ -268,19 +268,30 @@ button {
   border-radius: 10px;
 }
 
-.fan_img {
-  padding: 10px;
-}
 
-.fan_img img {
-  border-radius: 10px;
-}
-
+/* fan section video and picture css statrs */
 .fan_picture_video {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.fan_video_3pictures .nav .nav-item div img{
+  width: 209px;
+  height: 175px;
+}
+.fan_video iframe{
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+}
+.fan_img {
+  padding: 5px;
+}
 
+.fan_img img, .fan_video iframe {
+  border-radius: 10px;
+}
+
+/* fan section video and picture css ends */
 .gurantee_trust p#gurantee {
   font-size: 2em;
   line-height: 1.125em;
@@ -438,23 +449,60 @@ table {
 .email_send {
   text-align: center;
 }
-
+/* contact us form css starts */
 .contact_us {
   position: relative;
 }
-
+contact_us input#contact_us_textbox{
+  border-radius: 8px;  
+ 
+}
+.form-control#contact_us_textbox{
+  padding: 1.4rem 0.75rem !important;
+}
 #contact_us_button {
   position: absolute;
-  top: 0;
-  right: 0;
+  /* top: 5px; */
+  right: 7px;
+  bottom: 7px;
+  padding: 16px;
+  border-radius: 8px;
 }
-
-.icon_appstore_playstore {
-  text-align: center;
+/* contact us form css ends */
+.con_appstore_playstore{
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .icon_appstore {
   border-right: 1px solid #b2beb5;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+.icon_appstore{
+  display: block;
+  margin-left: 0;
+  margin-right: 0; 
+}
+.icon_appstore i{
+  margin-right: 5px;
+}
+.icon_appstore span{
+  margin-right: 20px; 
+}
+.icon_playstore{
+  margin-left: 10px;
+  
+}
+.icon_playstore i{
+  margin-right: 5px;
+}
+.icon_appstore_playstore{
+  display: grid;
+  justify-items: center;
+  padding: 10px;
 }
 
 .footer_body .container {
@@ -527,14 +575,4 @@ i.fa-arrow-up {
 .dropdown-menu ul {
   list-style: none;
   padding: 10px;
-}
-.fan_video_3pictures{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-  justify-items: center;
-  
-}
-.fan_video_3pictures img{
-  border-radius: 10px;
 }
